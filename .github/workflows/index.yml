@@ -1,0 +1,45 @@
+name: index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "mappings/**"
+      - "scripts/**"
+      - ".github/workflows/index.yml"
+  pull_request:
+    paths:
+      - "mappings/**"
+      - "scripts/**"
+      - ".github/workflows/index.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate mappings and build index
+        run: node scripts/build-index.mjs
+
+      # On main, commit the regenerated index so the site and the in-app
+      # browser pick it up. index.json is not in the paths filter above,
+      # so this commit does not retrigger the workflow.
+      - name: Commit regenerated index.json
+        if: github.event_name != 'pull_request'
+        run: |
+          if ! git diff --quiet index.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.json
+            git commit -m "Regenerate index.json"
+            git push
+          fi
