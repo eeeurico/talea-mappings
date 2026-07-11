@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "mappings": [
+    {
+      "id": "pioneer-ddj-400",
+      "name": "Pioneer DDJ-400",
+      "manufacturer": "Pioneer DJ",
+      "controller": "DDJ-400",
+      "author": "Eurico Sá Fernandes",
+      "description": "The built-in mapping: channel faders, crossfader, 3-band EQ, filter, transport, jog scratch + pitch bend, 4 hot cues per deck, LED feedback.",
+      "version": "1.0.0",
+      "file": "mappings/pioneer/ddj-400.json"
+    }
+  ]
+}

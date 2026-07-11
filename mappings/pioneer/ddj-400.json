@@ -1,0 +1,521 @@
+{
+  "device": "Pioneer DDJ-400",
+  "bindings": [
+    {
+      "midi": [
+        176,
+        19
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "volume",
+        "kind": "fader"
+      }
+    },
+    {
+      "midi": [
+        176,
+        7
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "eq_high",
+        "kind": "fader",
+        "curve": "eq_db"
+      }
+    },
+    {
+      "midi": [
+        176,
+        11
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "eq_mid",
+        "kind": "fader",
+        "curve": "eq_db"
+      }
+    },
+    {
+      "midi": [
+        176,
+        15
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "eq_low",
+        "kind": "fader",
+        "curve": "eq_db"
+      }
+    },
+    {
+      "midi": [
+        176,
+        23
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "filter",
+        "kind": "fader"
+      }
+    },
+    {
+      "midi": [
+        176,
+        0
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "pfl",
+        "kind": "button"
+      }
+    },
+    {
+      "midi": [
+        144,
+        11
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "play",
+        "on_release": false
+      }
+    },
+    {
+      "midi": [
+        144,
+        12
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "cue",
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        144,
+        88
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "sync",
+        "on_release": false
+      }
+    },
+    {
+      "midi": [
+        144,
+        54
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "jog_touch",
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        176,
+        34
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "jog",
+        "kind": "encoder"
+      }
+    },
+    {
+      "midi": [
+        176,
+        33
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck1",
+        "key": "jog_side",
+        "kind": "encoder"
+      }
+    },
+    {
+      "midi": [
+        144,
+        24
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "hotcue",
+        "arg": 0.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        144,
+        25
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "hotcue",
+        "arg": 1.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        144,
+        26
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "hotcue",
+        "arg": 2.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        144,
+        27
+      ],
+      "target": {
+        "type": "action",
+        "deck": 1,
+        "action": "hotcue",
+        "arg": 3.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        177,
+        19
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "volume",
+        "kind": "fader"
+      }
+    },
+    {
+      "midi": [
+        177,
+        7
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "eq_high",
+        "kind": "fader",
+        "curve": "eq_db"
+      }
+    },
+    {
+      "midi": [
+        177,
+        11
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "eq_mid",
+        "kind": "fader",
+        "curve": "eq_db"
+      }
+    },
+    {
+      "midi": [
+        177,
+        15
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "eq_low",
+        "kind": "fader",
+        "curve": "eq_db"
+      }
+    },
+    {
+      "midi": [
+        177,
+        23
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "filter",
+        "kind": "fader"
+      }
+    },
+    {
+      "midi": [
+        177,
+        0
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "pfl",
+        "kind": "button"
+      }
+    },
+    {
+      "midi": [
+        145,
+        11
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "play",
+        "on_release": false
+      }
+    },
+    {
+      "midi": [
+        145,
+        12
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "cue",
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        145,
+        88
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "sync",
+        "on_release": false
+      }
+    },
+    {
+      "midi": [
+        145,
+        54
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "jog_touch",
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        177,
+        34
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "jog",
+        "kind": "encoder"
+      }
+    },
+    {
+      "midi": [
+        177,
+        33
+      ],
+      "target": {
+        "type": "control",
+        "group": "deck2",
+        "key": "jog_side",
+        "kind": "encoder"
+      }
+    },
+    {
+      "midi": [
+        145,
+        24
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "hotcue",
+        "arg": 0.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        145,
+        25
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "hotcue",
+        "arg": 1.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        145,
+        26
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "hotcue",
+        "arg": 2.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        145,
+        27
+      ],
+      "target": {
+        "type": "action",
+        "deck": 2,
+        "action": "hotcue",
+        "arg": 3.0,
+        "on_release": true
+      }
+    },
+    {
+      "midi": [
+        182,
+        31
+      ],
+      "target": {
+        "type": "control",
+        "group": "master",
+        "key": "crossfader",
+        "kind": "fader"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "deck": 1,
+      "state": "play",
+      "status": 144,
+      "data1": 11,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 1,
+      "state": "cue",
+      "status": 144,
+      "data1": 12,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 1,
+      "state": "hotcue",
+      "index": 0,
+      "status": 144,
+      "data1": 24,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 1,
+      "state": "hotcue",
+      "index": 1,
+      "status": 144,
+      "data1": 25,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 1,
+      "state": "hotcue",
+      "index": 2,
+      "status": 144,
+      "data1": 26,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 1,
+      "state": "hotcue",
+      "index": 3,
+      "status": 144,
+      "data1": 27,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 2,
+      "state": "play",
+      "status": 145,
+      "data1": 11,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 2,
+      "state": "cue",
+      "status": 145,
+      "data1": 12,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 2,
+      "state": "hotcue",
+      "index": 0,
+      "status": 145,
+      "data1": 24,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 2,
+      "state": "hotcue",
+      "index": 1,
+      "status": 145,
+      "data1": 25,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 2,
+      "state": "hotcue",
+      "index": 2,
+      "status": 145,
+      "data1": 26,
+      "on": 127,
+      "off": 0
+    },
+    {
+      "deck": 2,
+      "state": "hotcue",
+      "index": 3,
+      "status": 145,
+      "data1": 27,
+      "on": 127,
+      "off": 0
+    }
+  ]
+}
